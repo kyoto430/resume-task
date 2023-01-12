@@ -5,12 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Резюме для курса "From Zero to Hero 2023"</title>
-    <link rel="stylesheet" href="/assets//css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <a class="nav__logo">
+            <img src="" alt="Логотип резюме" />
+          </a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link"><span>Личная информация</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"><span>Образование</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link"><span>О себе</span></a>
+              </li>
+            </ul>
+            <img
+              width="32"
+              height="32"
+              class="nav__close"
+              id="nav-close"
+              src="/assets/images/icons/close.svg"
+              alt="Иконка закрытия меню"
+            />
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <img
+              width="32"
+              height="32"
+              src="/assets/images/icons/bars.svg"
+              alt="Иконка открытия меню"
+            />
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="preview">
+          <h1>Резюме для курса "From Zero to Hero 2023"</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+            rem.
+          </p>
+          <a href="#">Посмотреть</a>
+        </section>
+        <section class="info">
+          <h2 class="info__title">Личная информация</h2>
+          <div class="info__container">
+            <dl class="info__list">
+              <dt>ФИО</dt>
+              <dd>Прокопец Руслан Александрович</dd>
+
+              <dt>Дата рождения</dt>
+              <dd>29.05.1995 (27 лет)</dd>
+
+              <dt>Телефон</dt>
+              <dd><a href="tel:+37533-661-39-74">+37533-661-39-74</a></dd>
+
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:nateriver345@gmail.com"
+                  >nateriver345@gmail.com</a
+                >
+              </dd>
+
+              <dt>Социальные сети</dt>
+              <dd>
+                <ul>
+                  <li>
+                    <a href="#"><img src="#" alt="github" /></a>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <img
+              src="assets/images/avatar/avatar.jpg"
+              alt="Аватар"
+              width="300"
+            />
+          </div>
+        </section>
+        <section class="study">
+          <h2>Образование</h2>
+          <ol>
+            <li>
+              Белорусский государственный университет информатики и
+              радиоэлектроники, “инженер-системотехник”, 2023 год.
+            </li>
+            <li>Курс JavaScript Junior Frontend Developer, 2022 год.</li>
+            <li>
+              Минский государственный колледж электроники, “техник-программист”,
+              2016 год.
+            </li>
+          </ol>
+        </section>
+        <section class="about">
+          <h2>О себе</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+            voluptatem blanditiis harum sit sequi quas consequatur incidunt
+            architecto asperiores, facere distinctio laudantium laboriosam nulla
+            voluptas. Non iste ullam provident reprehenderit?
+          </p>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>© 2023 - Руслан Прокопец</p>
+      </footer>
+    </div>
+    <script src="/assets/js/main.js"></script>
   </body>
-  <script src="/assets/js/main.js"></script>
 </html>
