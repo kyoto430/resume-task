@@ -11,17 +11,17 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-          <a class="nav__logo"> RUSLAN PRAKAPETS</a>
+          <a href="#preview" class="nav__logo">RUSLAN PRAKAPETS</a>
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#" class="nav__link"><span>Личная информация</span></a>
+                <a href="#info" class="nav__link">Личная информация</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link"><span>Образование</span></a>
+                <a href="#study" class="nav__link">Образование</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link"><span>О себе</span></a>
+                <a href="#about" class="nav__link">О себе</a>
               </li>
             </ul>
             <img
@@ -44,12 +44,12 @@
         </nav>
       </header>
       <main class="main">
-        <section class="preview">
+        <section class="preview fade-animation" id="preview">
           <div class="preview__background"></div>
           <h1>Резюме для курса "From Zero to Hero 2023"</h1>
-          <a class="preview__button" href="#">Посмотреть</a>
+          <a class="preview__button" href="#info">Посмотреть</a>
         </section>
-        <section class="info">
+        <section class="info fade-animation" id="info">
           <h2 class="info__title">Личная информация</h2>
           <div class="info__container">
             <dl class="info__list">
@@ -71,9 +71,48 @@
 
               <dt>Социальные сети</dt>
               <dd>
-                <ul>
+                <ul class="list__socials">
                   <li>
-                    <a href="#"><img src="#" alt="github" /></a>
+                    <a
+                      href="https://instagram.com/ruslan_prakapets"
+                      target="_blank"
+                      ><img
+                        width="32"
+                        height="32"
+                        class="list__social-img"
+                        src="assets/images/socials/instagram.svg"
+                        alt="Инстаграм"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/Kyoto430" target="_blank"
+                      ><img
+                        width="32"
+                        height="32"
+                        class="list__social-img"
+                        src="assets/images/socials/telegram.svg"
+                        alt="Телеграм"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://vk.com/Kyoto430" target="_blank"
+                      ><img
+                        width="32"
+                        height="32"
+                        class="list__social-img"
+                        src="assets/images/socials/vk.svg"
+                        alt="Вконтакте"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/kyoto430" target="_blank"
+                      ><img
+                        width="32"
+                        height="32"
+                        class="list__social-img"
+                        src="assets/images/socials/git.svg"
+                        alt="Гитхаб"
+                    /></a>
                   </li>
                 </ul>
               </dd>
@@ -86,36 +125,128 @@
             />
           </div>
         </section>
-        <section class="study">
+        <section class="study fade-animation" id="study">
           <h2 class="study__title">Образование</h2>
           <div class="study__container">
             <ul class="study__list">
               <li>
-                Белорусский государственный университет информатики и
-                радиоэлектроники, “инженер-системотехник”, 2023 год.
+                <h3>Инженер-системотехник</h3>
+                <p>
+                  Белорусский государственный университет информатики и
+                  радиоэлектроники, 2023 год.
+                </p>
               </li>
-              <li>Курс JavaScript Junior Frontend Developer, 2022 год.</li>
               <li>
-                Минский государственный колледж электроники,
-                “техник-программист”, 2016 год.
+                <h3>Junior Frontend Developer</h3>
+                <p>Result School, 2022 год.</p>
+              </li>
+              <li>
+                <h3>Техник-программист</h3>
+                <p>Минский государственный колледж электроники, 2016 год.</p>
               </li>
             </ul>
           </div>
         </section>
-        <section class="about">
+        <section class="about fade-animation" id="about">
           <h2 class="about__title">О себе</h2>
           <div class="about__container">
-            <p class="about">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-              voluptatem blanditiis harum sit sequi quas consequatur incidunt
-              architecto asperiores, facere distinctio laudantium laboriosam
-              nulla voluptas. Non iste ullam provident reprehenderit?
-            </p>
+            <div class="about__container-description">
+              <ul class="about__description fade-animation">
+                <h3>Личные качества:</h3>
+                <li>Могу работать индивидуально и в команде</li>
+                <li>Умею четко выполнять поставленные задачи</li>
+                <li>Умею планировать свою работу</li>
+                <li>Способен к обучению</li>
+              </ul>
+              <ul class="about__description fade-animation">
+                <h3>Профессиональные навыки:</h3>
+                <li>Уверенно владею технологиями верстки</li>
+                <li>Владею языком программирования JavaScript</li>
+                <li>Владею библиотекой React</li>
+                <li>Имею базовые знания Redux, Node.js</li>
+                <li>Умею работать с системой контроля версий Git</li>
+              </ul>
+              <ul class="about__description fade-animation">
+                <h3>Увлечения:</h3>
+                <li>Футбол</li>
+                <li>Шахматы</li>
+                <li>Рисование</li>
+                <li>Калистеника</li>
+              </ul>
+            </div>
           </div>
         </section>
+        <div class="slider__wrapper">
+          <div class="slider">
+            <div class="slider__nav">
+              <label for="s1" class="slider__nav-item"></label>
+              <label for="s2" class="slider__nav-item"></label>
+              <label for="s3" class="slider__nav-item"></label>
+            </div>
+            <div class="slider__items">
+              <input type="radio" name="s" id="s1" />
+              <input type="radio" name="s" id="s2" />
+              <input type="radio" name="s" id="s3" />
+
+              <div class="slider-item">
+                <img src="/assets/images/avatar/avatar.jpg" alt="1" />
+              </div>
+              <div class="slider-item">
+                <img src="/assets/images/avatar/avatar.jpg" alt="2" />
+              </div>
+              <div class="slider-item">
+                <img src="/assets/images/avatar/avatar.jpg" alt="3" />
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <p>© 2023 - Руслан Прокопец</p>
+        <div class="footer__socials-container">
+          <ul class="footer__socials">
+            <li>
+              <a href="https://instagram.com/ruslan_prakapets" target="_blank"
+                ><img
+                  width="32"
+                  height="32"
+                  class="list__social-img"
+                  src="assets/images/socials/instagram-footer.svg"
+                  alt="Инстаграм"
+              /></a>
+            </li>
+            <li>
+              <a href="https://t.me/Kyoto430" target="_blank"
+                ><img
+                  width="32"
+                  height="32"
+                  class="list__social-img"
+                  src="assets/images/socials/telegram-footer.svg"
+                  alt="Телеграм"
+              /></a>
+            </li>
+            <li>
+              <a href="https://vk.com/Kyoto430" target="_blank"
+                ><img
+                  width="32"
+                  height="32"
+                  class="list__social-img"
+                  src="assets/images/socials/vk-footer.svg"
+                  alt="Вконтакте"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/kyoto430" target="_blank"
+                ><img
+                  width="32"
+                  height="32"
+                  class="list__social-img"
+                  src="assets/images/socials/git-footer.svg"
+                  alt="Гитхаб"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
     <script src="/assets/js/main.js"></script>
