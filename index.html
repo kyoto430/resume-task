@@ -11,9 +11,7 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-          <a class="nav__logo">
-            <img src="" alt="Логотип резюме" />
-          </a>
+          <a class="nav__logo"> RUSLAN PRAKAPETS</a>
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
@@ -47,12 +45,9 @@
       </header>
       <main class="main">
         <section class="preview">
+          <div class="preview__background"></div>
           <h1>Резюме для курса "From Zero to Hero 2023"</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-            rem.
-          </p>
-          <a href="#">Посмотреть</a>
+          <a class="preview__button" href="#">Посмотреть</a>
         </section>
         <section class="info">
           <h2 class="info__title">Личная информация</h2>
@@ -84,6 +79,7 @@
               </dd>
             </dl>
             <img
+              class="info__avatar"
               src="assets/images/avatar/avatar.jpg"
               alt="Аватар"
               width="300"
@@ -91,27 +87,31 @@
           </div>
         </section>
         <section class="study">
-          <h2>Образование</h2>
-          <ol>
-            <li>
-              Белорусский государственный университет информатики и
-              радиоэлектроники, “инженер-системотехник”, 2023 год.
-            </li>
-            <li>Курс JavaScript Junior Frontend Developer, 2022 год.</li>
-            <li>
-              Минский государственный колледж электроники, “техник-программист”,
-              2016 год.
-            </li>
-          </ol>
+          <h2 class="study__title">Образование</h2>
+          <div class="study__container">
+            <ul class="study__list">
+              <li>
+                Белорусский государственный университет информатики и
+                радиоэлектроники, “инженер-системотехник”, 2023 год.
+              </li>
+              <li>Курс JavaScript Junior Frontend Developer, 2022 год.</li>
+              <li>
+                Минский государственный колледж электроники,
+                “техник-программист”, 2016 год.
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="about">
-          <h2>О себе</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-            voluptatem blanditiis harum sit sequi quas consequatur incidunt
-            architecto asperiores, facere distinctio laudantium laboriosam nulla
-            voluptas. Non iste ullam provident reprehenderit?
-          </p>
+          <h2 class="about__title">О себе</h2>
+          <div class="about__container">
+            <p class="about">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              voluptatem blanditiis harum sit sequi quas consequatur incidunt
+              architecto asperiores, facere distinctio laudantium laboriosam
+              nulla voluptas. Non iste ullam provident reprehenderit?
+            </p>
+          </div>
         </section>
       </main>
       <footer class="footer">
